@@ -1,32 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="js/echarts3.common.min.js"></script>
-    <script src="js/china.js"></script>
-    <style>
-    	*{
-    		margin:0;
-    		padding:0;
-    	}
-    	#main>div{
-    		padding:0 !important;
-    	}
-    	#divclick{
-    		background-color:#ddd;
-    		padding:5px;
-    		color:#333;
-    	}
-    	#divhover{
-    		background-color: rgba(50, 50, 50, 0.701961);
-    		padding:5px;
-    	}
-    </style>
-</head>
-<body>
-<div id="main" style="width: 1920px;height:1080px;"></div>
-<script type="text/javascript">
+/*
+* @Author: Administrator
+* @Date:   2017-09-22 16:54:04
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-09-22 16:54:27
+*/
+$(function(){
     //地区名称和地区项目数量
     var arr=[{name:'北京',value:'10'},{name:'天津',value:'20'},{name:'上海',value:'121'},{name:'重庆',value:'231'},
              {name:'河北',value:'20'},{name:'河南',value:'33'},{name:'云南',value:'98'},{name:'辽宁',value:'10'},
@@ -154,6 +132,8 @@
     myChart.on('mouseout', function(data) {
     	f=1;
     });
-</script>
-</body>
-</html>
+    $(window).resize(function(){
+        myChart.resize();
+    });
+    
+});
