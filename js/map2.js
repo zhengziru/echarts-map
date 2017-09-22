@@ -2,33 +2,33 @@
 * @Author: Administrator
 * @Date:   2017-08-22 09:38:50
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-09-22 16:42:32
+* @Last Modified time: 2017-09-22 17:06:55
 */
 $(function(){
 	//河北省地图
 	var data = [
-	    {name: '井陉矿区',item1:'新收案件',value1: 120,item2:'未结案件',value2: 10 ,value:20},
-	    {name: '井陉县',item1:'新收案件',value1: 120,item2:'未结案件',value2: 10 ,value:20},
-	    {name: '裕华区',item1:'新收案件',value1: 120 ,item2:'未结案件',value2: 10 ,value:20},
-	    {name: '新华区',item1:'新收案件',value1: 30 ,item2:'未结案件',value2: 10 ,value:20},
-	    {name: '长安区',item1:'新收案件',value1: 40 ,item2:'未结案件',value2: 10 ,value:20},
-	    {name: '藁城区',item1:'新收案件',value1: 50,item2:'未结案件',value2: 10  ,value:20},
-	    {name: '鹿泉区',item1:'新收案件',value1: 60 ,item2:'未结案件',value2: 10  ,value:20},
-	    {name: '栾城区',item1:'新收案件',value1: 70,item2:'未结案件',value2: 10 ,value:20},
-	    {name: '桥西区',item1:'新收案件',value1: 90 ,item2:'未结案件',value2: 10 ,value:20},
-	    {name: '正定县',item1:'新收案件',value1: 110 ,item2:'未结案件',value2: 10 ,value:20},
-	    {name: '行唐县',item1:'新收案件',value1: 120 ,item2:'未结案件',value2: 10 ,value:20},
-	    {name: '高邑县',item1:'新收案件',value1: 80 ,item2:'未结案件',value2: 10 ,value:20},
-	    {name: '灵寿县',item1:'新收案件',value1: 90 ,item2:'未结案件',value2: 10 ,value:20},
-	    {name: '深泽县',item1:'新收案件',value1: 110 ,item2:'未结案件',value2: 10 ,value:20},
-	    {name: '赞皇县',item1:'新收案件',value1: 90 ,item2:'未结案件',value2: 10 ,value:20},
-	    {name: '赵县',item1:'新收案件',value1: 110 ,item2:'未结案件',value2: 10 ,value:20},
-	    {name: '无极县',item1:'新收案件',value1: 60 ,item2:'未结案件',value2: 10  ,value:20},
-	    {name: '元氏县',item1:'新收案件',value1: 70,item2:'未结案件',value2: 10 ,value:20},
-	    {name: '平山县',item1:'新收案件',value1: 80 ,item2:'未结案件',value2: 10 ,value:20},
-	    {name: '辛集市',item1:'新收案件',value1: 90 ,item2:'未结案件',value2: 10 ,value:20},
-	    {name: '晋州市',item1:'新收案件',value1: 110 ,item2:'未结案件',value2: 10 ,value:20},
-	    {name: '新乐市',item1:'新收案件',value1: 120 ,item2:'未结案件',value2: 10 ,value:20}
+	    {name: '井陉矿区',item1:'iphone6销量',value1: 120,item2:'iphone7销量',value2: 10 ,value:20},
+	    {name: '井陉县',item1:'iphone6销量',value1: 120,item2:'iphone7销量',value2: 10 ,value:20},
+	    {name: '裕华区',item1:'iphone6销量',value1: 120 ,item2:'iphone7销量',value2: 10 ,value:20},
+	    {name: '新华区',item1:'iphone6销量',value1: 30 ,item2:'iphone7销量',value2: 10 ,value:20},
+	    {name: '长安区',item1:'iphone6销量',value1: 40 ,item2:'iphone7销量',value2: 10 ,value:20},
+	    {name: '藁城区',item1:'iphone6销量',value1: 50,item2:'iphone7销量',value2: 10  ,value:20},
+	    {name: '鹿泉区',item1:'iphone6销量',value1: 60 ,item2:'iphone7销量',value2: 10  ,value:20},
+	    {name: '栾城区',item1:'iphone6销量',value1: 70,item2:'iphone7销量',value2: 10 ,value:20},
+	    {name: '桥西区',item1:'iphone6销量',value1: 90 ,item2:'iphone7销量',value2: 10 ,value:20},
+	    {name: '正定县',item1:'iphone6销量',value1: 110 ,item2:'iphone7销量',value2: 10 ,value:20},
+	    {name: '行唐县',item1:'iphone6销量',value1: 120 ,item2:'iphone7销量',value2: 10 ,value:20},
+	    {name: '高邑县',item1:'iphone6销量',value1: 80 ,item2:'iphone7销量',value2: 10 ,value:20},
+	    {name: '灵寿县',item1:'iphone6销量',value1: 90 ,item2:'iphone7销量',value2: 10 ,value:20},
+	    {name: '深泽县',item1:'iphone6销量',value1: 110 ,item2:'iphone7销量',value2: 10 ,value:20},
+	    {name: '赞皇县',item1:'iphone6销量',value1: 90 ,item2:'iphone7销量',value2: 10 ,value:20},
+	    {name: '赵县',item1:'iphone6销量',value1: 110 ,item2:'iphone7销量',value2: 10 ,value:20},
+	    {name: '无极县',item1:'iphone6销量',value1: 60 ,item2:'iphone7销量',value2: 10  ,value:20},
+	    {name: '元氏县',item1:'iphone6销量',value1: 70,item2:'iphone7销量',value2: 10 ,value:20},
+	    {name: '平山县',item1:'iphone6销量',value1: 80 ,item2:'iphone7销量',value2: 10 ,value:20},
+	    {name: '辛集市',item1:'iphone6销量',value1: 90 ,item2:'iphone7销量',value2: 10 ,value:20},
+	    {name: '晋州市',item1:'iphone6销量',value1: 110 ,item2:'iphone7销量',value2: 10 ,value:20},
+	    {name: '新乐市',item1:'iphone6销量',value1: 120 ,item2:'iphone7销量',value2: 10 ,value:20}
 	];
 	var geoCoordMap = {
    	   '井陉矿区':[114.062062,38.095151],
